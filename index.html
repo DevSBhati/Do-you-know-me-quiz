@@ -18,7 +18,8 @@
     readline-sync" in our repl's shell).
     //var readlineSync = require('readline-sync')
     
-    explain- Then creating another variable called askUsername and storing "question" fucntion of readlinSync
+    explain- (INPUT)
+    Then creating another variable called askUsername and storing "question" fucntion of readlinSync
     variable with "string" in bracket. And then using "console.log" to print string that we want. 
     //var askUserName = readlineSync.question("What is Your Name? ")
     //console.log("Welcome!", askUserName)
@@ -27,6 +28,9 @@
     updated.
     //var score = 0
 
+    explain- (INPUT)
+    A variable is created named listOfQuestion wherein we have inserted a "list" by using [], and 
+    "dict" by using {}, where "dict" has "question:" key and "answer:" key having different value. 
     //var listOfQuestion = [{
     //   question: "What is my name? ",
     //   answer: "Dev Bhati"
@@ -43,6 +47,33 @@
     //   question: "Which is my favourite movie? ",
     //   answer: "Kantara"
     //  }]
+    
+    
+    explain- (OUTPUT) 
+    A function "play" has been created which has two parameters namely 
+    quetsion: & answer: key then variable "userInput" has been created to ask "question", and than further the 
+    "if and else" is used to print the answer accordingly.
+    // function play(question, answer) {
+    //   var userInput = readlineSync.question(question)
+
+    //   if (userInput.toUpperCase() === answer.toUpperCase()) {
+    //     console.log("You are right!")
+    //     score = score + 1
+    //     console.log("Your score is, ", score)
+    //   } else {
+    //     console.log("You are wrong!")
+    //     score = score - 1
+    //     console.log("Your score is, ", score)
+    //   }
+    // }
+
+
+    explain- (PROCESS) "for" loop is generated to itirrate over question: & answer: key of listOfQuestion variable
+    and than put it into askedQuestion variable and than by using play fucntion they are printed 
+    // for (var i = 0; i < listOfQuestion.length; i++) {
+    //   var askedQuestion = listOfQuestion[i]
+    //   play(askedQuestion.question, askedQuestion.answer)
+    // }
 </body>
 
 </html>
